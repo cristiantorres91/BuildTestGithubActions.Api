@@ -23,7 +23,7 @@ namespace BuildTestGithubActions.Test
             ObjectResult responseController = (ObjectResult)controller.Get(text);
 
             //Assert
-            Assert.AreEqual((int)HttpStatusCode.OK, responseController.StatusCode!.Value);
+            Assert.AreEqual((int)HttpStatusCode.InternalServerError, responseController.StatusCode!.Value);
         }
     }
 }
